@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 40px;
+}
+
+.mmtc {
+    width: 500px;
+    height: 500px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links ul li {
+    margin: 0 20px;
+    display: inline;
+    list-style: none;
+}
+
+.links ul li a {
+    color:white;
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile ul {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+.profile ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.hobby {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hobby-img {
+    display: flex;
+    justify-self: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.hobby h2 {
+    text-align: center;
+}
+
+.aboutme {
+    padding: 50px;
+
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
