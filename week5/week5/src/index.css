@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif; /*  Pretendard가 없는 환경에선 기본 sans-serif 계열(꼬리없는) 글꼴을 자동으로 사용하겠다는 의미. */
+  background-color: #ffffff;
+  color: #222;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;                /* 스크롤 기능 유지 */
+  -ms-overflow-style: none;     /* IE, Edge */
+  scrollbar-width: none;        /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
