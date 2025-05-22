@@ -1,4 +1,3 @@
-import Header from "../components/header/Header";
 import styled from "styled-components";
 import Clip from "../assets/images/clip.png";
 import ProjectComponent from "../components/homepage/ProjectComponent";
@@ -6,7 +5,6 @@ import ProjectComponent from "../components/homepage/ProjectComponent";
 export default function ProjectPage() {
   return (
     <>
-      <Header />
       <MainContainer>
         <ClipText><ClipImg src={Clip} alt="clip" />Project</ClipText>
         <Description>

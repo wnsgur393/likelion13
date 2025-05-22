@@ -7,7 +7,6 @@ import Score from "../assets/images/score.png";
 export default function DiaryPage() {
   return (
     <>
-      <Header />
       <MainContainer>
         <ClipText><ClipImg src={GreenClip} alt="clip" />Diary</ClipText>
         <Description>
