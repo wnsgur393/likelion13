@@ -1,4 +1,3 @@
-import Header from "../components/header/Header";
 import styled from "styled-components";
 import GreenClip from "../assets/images/GreenClip.png";
 import GroupPhoto from "../assets/images/group-photo.png";
@@ -7,7 +6,6 @@ import Score from "../assets/images/score.png";
 export default function DiaryPage() {
   return (
     <>
-      <Header />
       <MainContainer>
         <ClipText><ClipImg src={GreenClip} alt="clip" />Diary</ClipText>
         <Description>
