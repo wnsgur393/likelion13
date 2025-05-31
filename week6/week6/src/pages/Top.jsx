@@ -5,11 +5,7 @@ import styled from "styled-components";
 import CategoryNav from "../components/toppage/CategoryNav";
 
 export default function Top() {
-  const [sortOption, setSortOption] = useState("date");
-
-  const handleSortChange = (e) => {
-    setSortOption(e.target.value);
-  };
+  const [sortOption, onSortChange] = useState("date");
 
   const sortedProducts = [...products].sort((a, b) => {
     switch (sortOption) {
@@ -27,9 +23,9 @@ export default function Top() {
 
   return (
     <Wrapper>
-      <CategoryNav 
-      onSortChange={handleSortChange}
-      sortOption={sortOption}
+      <CategoryNav
+        sortOption={sortOption}
+        onSortChange={onSortChange}
       />
       <ProductList>
         {sortedProducts.map((product) => (
@@ -53,6 +49,5 @@ const Wrapper = styled.div`
 
 const ProductList = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  flex-wrap: wrap;  
 `;
