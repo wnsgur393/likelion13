@@ -22,6 +22,8 @@ export default function CustomDropdown({ onSortChange }) {
           <MenuItem onClick={() => handleSort("low", "낮은 가격순")}>낮은 가격순</MenuItem>
           <MenuItem onClick={() => handleSort("high", "높은 가격순")}>높은 가격순</MenuItem>
           <MenuItem onClick={() => handleSort("name", "이름순")}>이름순</MenuItem>
+          <MenuItem onClick={() => handleSort("reviews", "리뷰 많은 순")}>리뷰 많은 순</MenuItem>
+          <MenuItem onClick={() => handleSort("rating", "평점 순")}>평점 순</MenuItem>
           <MenuItem onClick={() => handleSort("date", "입고일순")}>입고일순</MenuItem>
         </DropdownMenu>
       )}

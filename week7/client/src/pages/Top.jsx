@@ -40,6 +40,10 @@ export default function Top() {
         return a.price - b.price;
       case "name":
         return a.name.localeCompare(b.name);
+      case "reviews":
+        return (b.reviews || 0) - (a.reviews || 0);
+      case "rating":
+        return (b.rating || 0) - (a.rating || 0);
       case "date":
       default:
         return new Date(b.arrived) - new Date(a.arrived);
@@ -65,6 +69,8 @@ export default function Top() {
             name={product.name}
             price={product.price}
             image={product.image}
+            reviews={product.reviews}
+            rating={product.rating}
           />
         ))}
       </ProductList>
